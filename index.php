@@ -7,7 +7,10 @@
 ?>
 
     <div class="card">
-        <div class="card-title">Teste</div>
+        <div class="card-title"><h5 class="text-accent-1">Home</h5></div>
+        <div class="card-content">
+            <p>Teste</p>
+        </div>
     </div>
 
 
