@@ -40,11 +40,11 @@ function logConsole($name, $data = NULL, $jsEval = FALSE)
  if (! window.console) console = {};
  console.log = console.log || function(name, data){};
  // end of fallback
-
+ console.log('------------------------------------------');
  console.log('$name');
  console.log('------------------------------------------');
- console.log('$type');
- console.log($data);
+ // console.log('$type');
+ // console.log($data);
  console.log('\\n');
 </script>
 JSCODE;

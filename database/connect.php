@@ -1,4 +1,5 @@
 <?php
+    require_once "./Utils/console_log.php";
     $host = 'localhost';
     $user = 'root';
     $password = '';
@@ -6,9 +7,9 @@
     $connection = mysqli_connect($host,$user , $password,$database);
 
     if($connection){
-        echo 'CONECTION OK';
+        logConsole('CONNECTION OK', 'null', true);
     }else{
-        echo 'CONECTION ERROR';
+        logConsole('CONNECTION ERROR', 'null', true);
     }
 ?>
 
