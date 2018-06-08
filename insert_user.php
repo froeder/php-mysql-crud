@@ -18,6 +18,9 @@
             <div class="card-content">
                 <h4 style="color:white" class="center">The user <?= $name ?> was been added. </h4>
             </div>
+            <div class="card-action">
+                <a href="list_users.php"<button class="btn white"><span style="color:black"><i class="material-icons">arrow_back</i> Back</span></button></a>
+            </div>
         </div>
         <?php } else { 
             $msg = mysqli_error($connection);	
@@ -25,6 +28,9 @@
             <div class="card red">
                 <div class="card-content">
                     <h4 style="color:white" class="center">Error when try to add the user <?= $name ?>. </h4>
+                </div>
+                <div class="card-action">
+                    <a href="list_users.php"><button class="btn white"><span style="color:black"><i class="material-icons">arrow_back</i> Back</span></button></a>
                 </div>
             </div>
         <?php }

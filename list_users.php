@@ -32,7 +32,9 @@
         </table>
     </div>
     <div class="card-action">
-        <a href="add_user.php"><button class="waves-effect waves-light btn">Add User</button></a>
+        <a href="add_user.php">
+            <button class="waves-effect waves-light btn"><i class="material-icons">add</i> Add User</button>
+        </a>
     </div>
 </div>
 
