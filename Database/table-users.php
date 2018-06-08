@@ -8,8 +8,15 @@
         }
         return $users ;
     }
+
     function insertUser($connection, $name, $email, $company ,$age, $born){
         $query = "insert into user (name, email, company , age ,born) values ('{$name}', '{$email}','{$company}' , '{$age}' ,'{$born}')" ;
         return mysqli_query($connection,$query) ;
     }
+
+    function removeUser($connection, $id){
+        $query = "delete from user where id = {$id}" ;
+        return mysqli_query($connection, $query);
+    }
+
 ?>

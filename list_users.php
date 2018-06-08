@@ -15,6 +15,7 @@
                 <th>Company</th>
                 <th>Age</th>
                 <th>Born</th>
+                <th>Actions</th>
             </tr>
             <?php
             $users = loadUser($connection);
@@ -27,6 +28,13 @@
                     <td class="company"><?= $user['company'] ?></td>
                     <td class="age"><?= $user['age'] ?></td>
                     <td class="born"> <?= $user['born'] ?></td>
+                    <td>
+                        <a href="remove_user.php?id=<?= $user['id']?>">
+                            <button class="btn red">
+                            <i class="material-icons">delete_forever</i>Remove  
+                            </button>
+                        </a>
+                    </td>
                 </tr>
             <?php
             endforeach

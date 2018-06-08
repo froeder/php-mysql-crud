@@ -32,8 +32,6 @@
                             <label for="icon_telephone">Born Date</label>
                         </div>
                     </div>
-                    
-                
             </div>
         </div>
         <div class="card-action grey">
