@@ -8,8 +8,8 @@
         }
         return $users ;
     }
-    function insertUser($connection, $name, $email, $age, $born){
-        $query = "insert into user (name, email, age ,born) values ('{$name}', '{$email}', '{$age}' ,'{$born}')" ;
+    function insertUser($connection, $name, $email, $company ,$age, $born){
+        $query = "insert into user (name, email, company , age ,born) values ('{$name}', '{$email}','{$company}' , '{$age}' ,'{$born}')" ;
         return mysqli_query($connection,$query) ;
     }
 ?>

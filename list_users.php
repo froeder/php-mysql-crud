@@ -5,13 +5,14 @@
 ?>
 
 <div class="card">
-    <div class="card-title">Users</div>
+    <div class="card-title center grey"><strong style="color:white"><h5>Users</h5></strong></div>
     <div class="card-content">
         <table class="table table-striped table-bordered">
             <tr>
                 <th>ID</th>
                 <th>Name</th>
                 <th>E-mail</th>
+                <th>Company</th>
                 <th>Age</th>
                 <th>Born</th>
             </tr>
@@ -23,6 +24,7 @@
                     <td class="id"><?= $user['id'] ?></td>
                     <td class="nome"><?= $user['name'] ?></td>
                     <td class="email"><?= $user['email'] ?></td>
+                    <td class="company"><?= $user['company'] ?></td>
                     <td class="age"><?= $user['age'] ?></td>
                     <td class="born"> <?= $user['born'] ?></td>
                 </tr>
@@ -31,7 +33,7 @@
             ?>
         </table>
     </div>
-    <div class="card-action">
+    <div class="card-action grey">
         <a href="add_user.php">
             <button class="waves-effect waves-light btn"><i class="material-icons">add</i> Add User</button>
         </a>
