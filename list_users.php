@@ -9,13 +9,18 @@
     <div class="card-content">
         <table class="table table-striped table-bordered">
             <tr>
+                <th>ID</th>
                 <th>Name</th>
+                <th>E-mail</th>
+                <th>Age</th>
+                <th>Born</th>
             </tr>
             <?php
             $users = loadUser($connection);
             foreach($users as $user) :
                 ?>
-                <tr class="paciente">
+                <tr class="user">
+                    <td class="id"><?= $user['id'] ?></td>
                     <td class="nome"><?= $user['name'] ?></td>
                     <td class="email"><?= $user['email'] ?></td>
                     <td class="age"><?= $user['age'] ?></td>

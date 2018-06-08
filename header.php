@@ -15,8 +15,8 @@
     <div class="nav-wrapper teal">
         <a href="#" class="right brand-logo">PHP Crud</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="../index.php">Home</a></li>
-            <li><a href="users/list_users.php">Users</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="list_users.php">Users</a></li>
             <li><a href="about.php">About</a></li>
         </ul>
     </div>
