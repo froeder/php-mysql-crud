@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>PHP CRUD</title>
 </head>
 <body class="teal lighten-4" >
@@ -13,8 +15,8 @@
     <div class="nav-wrapper teal">
         <a href="#" class="right brand-logo">PHP Crud</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="users.php">Users</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="users/list_users.php">Users</a></li>
             <li><a href="about.php">About</a></li>
         </ul>
     </div>

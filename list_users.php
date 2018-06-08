@@ -2,7 +2,6 @@
     require_once "header.php";
     require_once "database/connect.php";
     require_once "database/table-users.php";
-    require_once "Utils/console_log.php";
 ?>
 
 <div class="card">
@@ -18,11 +17,17 @@
                 ?>
                 <tr class="paciente">
                     <td class="nome"><?= $user['name'] ?></td>
+                    <td class="email"><?= $user['email'] ?></td>
+                    <td class="age"><?= $user['age'] ?></td>
+                    <td class="born"> <?= $user['born'] ?></td>
                 </tr>
             <?php
             endforeach
             ?>
         </table>
+    </div>
+    <div class="card-action">
+        <a href="add_user.php"><button class="waves-effect waves-light btn">Add User</button></a>
     </div>
 </div>
 
