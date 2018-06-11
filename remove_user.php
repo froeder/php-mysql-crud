@@ -5,7 +5,7 @@
 
     $id = $_POST["id"] ;
     removeUser($connection, $id);
-    header("Location: list_users.pgp") ;
+    header("Location: list_users.php") ;
     die();
 ?>
 

@@ -29,13 +29,9 @@ require_once "database/table-users.php";
                     <td class="age"><?= $user['age'] ?></td>
                     <td class="born"> <?= $user['born'] ?></td>
                     <td>
-                        <form action="remove_user" method="post">
+                        <form action="remove_user.php" method="post">
                             <input type="hidden" name="id" value="<?= $user['id'] ?>">
-                            <button type="buttom" class="btn waves-effect waves-light red">Remove</button>
-                        </form>
-                        <form action="remove_user">
-                            <input type="hidden" name="id" value="<?= $user['id'] ?>">
-                            <button calss="btn btn-danger">Remover</button>
+                            <button type="submit" class="btn waves-effect waves-light red">Remove</button>
                         </form>
                     </td>
                 </tr>

@@ -17,6 +17,7 @@
         <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a href="index.php">Home</a></li>
             <li><a href="list_users.php">Users</a></li>
+            <li><a href="list_items.php">Items</a></li>
             <li><a href="about.php">About</a></li>
         </ul>
     </div>
