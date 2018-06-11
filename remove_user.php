@@ -1,3 +1,16 @@
+<?php 
+    require_once "header.php" ;
+    require_once "database/table-users.php" ;
+    require_once "database/connect.php" ;
+
+    $id = $_POST["id"] ;
+    removeUser($connection, $id);
+    header("Location: list_users.pgp") ;
+    die();
+?>
+
+
+
 <?php
-    echo "TODO: CREATE REMOVE CODE"
+    require_once "footer.php"
 ?>

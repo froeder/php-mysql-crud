@@ -1,7 +1,7 @@
 <?php
-    require_once "header.php";
-    require_once "database/connect.php";
-    require_once "database/table-users.php";
+require_once "header.php";
+require_once "database/connect.php";
+require_once "database/table-users.php";
 ?>
 
 <div class="card">
@@ -19,8 +19,8 @@
             </tr>
             <?php
             $users = loadUser($connection);
-            foreach($users as $user) :
-                ?>
+            foreach ($users as $user) :
+            ?>
                 <tr class="user">
                     <td class="id"><?= $user['id'] ?></td>
                     <td class="nome"><?= $user['name'] ?></td>
@@ -29,11 +29,14 @@
                     <td class="age"><?= $user['age'] ?></td>
                     <td class="born"> <?= $user['born'] ?></td>
                     <td>
-                        <a href="remove_user.php?id=<?= $user['id']?>">
-                            <button class="btn red">
-                            <i class="material-icons">delete_forever</i>Remove  
-                            </button>
-                        </a>
+                        <form action="remove_user" method="post">
+                            <input type="hidden" name="id" value="<?= $user['id'] ?>">
+                            <button type="buttom" class="btn waves-effect waves-light red">Remove</button>
+                        </form>
+                        <form action="remove_user">
+                            <input type="hidden" name="id" value="<?= $user['id'] ?>">
+                            <button calss="btn btn-danger">Remover</button>
+                        </form>
                     </td>
                 </tr>
             <?php
@@ -49,5 +52,5 @@
 </div>
 
 <?php
-    require_once "footer.php"
+require_once "footer.php"
 ?>
