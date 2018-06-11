@@ -14,15 +14,17 @@
             <p><strong>Name: </strong><?= $name ?></p>
             <p><strong>Description: </strong> <?= $description ?></p>
             <p><strong>Price: R$</strong><?= $price ?></p>
-            <p><strong>Quantity: </strong><?= $quantity ?></p>
-        </div>
-        <div style="background-color:grey; color:white" class="card-action">
+            <p><strong>Quantity in stock: </strong><?= $quantity ?></p>
             <form action="add_to_cart.php">
                 <input type="hidden" name="id" value="<?= $id ?>">
                 <input type="hidden" name="name" value="<?= $name ?>">
                 <input type="hidden" name="description" value="<?= $description ?>">
                 <input type="hidden" name="price" value="<?= $price ?>">
-                <input type="hidden" name="quantity" value="<?= $quantity ?>">
+                <input type="number" name="quantity_item">Quantity </input>
+                <input type="hidden" name="quantity" value="<?= $quantity ?>"><br>
+        </div>
+        <div style="background-color:grey; color:white" class="card-action">
+            
                 <button type="submit" class="btn waves-effect waves-light">Buy</button>
             </form>
         </div>
