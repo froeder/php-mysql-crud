@@ -9,8 +9,8 @@
         return $users ;
     }
 
-    function insertUser($connection, $name, $email, $company ,$age, $born){
-        $query = "insert into user (name, email, company , age ,born) values ('{$name}', '{$email}','{$company}' , '{$age}' ,'{$born}')" ;
+    function insertUser($connection, $name, $email, $company ,$age, $born , $password){
+        $query = "insert into user (name, email, company , age ,born, password) values ('{$name}', '{$email}','{$company}' , '{$age}' ,'{$born}' , '{$password}')" ;
         return mysqli_query($connection,$query) ;
     }
 

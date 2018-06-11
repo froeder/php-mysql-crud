@@ -7,12 +7,13 @@
     $email = $_GET["email"] ;
     $company = $_GET["company"] ;
     $born = $_GET["born"] ;
+    $password = $_GET["password"] ;
     $current_year = date("Y") ;
     list($year, $month, $day) = explode('-' , $born); //to get year from var born
     $bornYear = $year ;
     $age = $current_year - $bornYear ; 
  
-    if(insertUser($connection, $name, $email, $company , $age, $born )){
+    if(insertUser($connection, $name, $email, $company , $age, $born, $password )){
         ?>
 		
         <div class="card green">

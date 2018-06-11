@@ -32,6 +32,11 @@
                             <label for="icon_telephone">Born Date</label>
                         </div>
                     </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">lock</i>
+                        <input class="datepicker form-control" type="password" id="password" name="password">
+                        <label for="icon_telephone">Password</label>
+                    </div>
             </div>
         </div>
         <div class="card-action grey">
