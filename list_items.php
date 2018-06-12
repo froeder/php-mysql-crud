@@ -4,7 +4,7 @@
     require_once "database/table-items.php" ;
 ?>
 
-<div class="card">
+<div style="border-radius:20px 20px" class="card">
 <div class="card-title center grey"><strong style="color:white"><h5>Items</h5></strong></div>
     <div class="card-content">
         <table class="table table-striped table-bordered">

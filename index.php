@@ -6,7 +6,7 @@ require_once "database/table-users.php";
 
 ?>
 
-    <div class="card">
+    <div style="border-radius:0 20px" class="card">
         <div class="card-title"><h5 class="text-accent-1">Home</h5></div>
         <div class="card-content">
         <div class="row">

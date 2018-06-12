@@ -4,7 +4,7 @@ require_once "database/connect.php";
 require_once "database/table-users.php";
 ?>
 
-<div class="card">
+<div style="border-radius:0 0 20px 20px" class="card">
     <div class="card-title center grey"><strong style="color:white"><h5>Users</h5></strong></div>
     <div class="card-content">
         <table class="table table-striped table-bordered">
@@ -40,7 +40,7 @@ require_once "database/table-users.php";
             ?>
         </table>
     </div>
-    <div class="card-action grey">
+    <div style="border-radius:0 0 20px 20px " class="card-action grey">
         <a href="add_user.php">
             <button class="waves-effect waves-light btn"><i class="material-icons">add</i> Add User</button>
         </a>
