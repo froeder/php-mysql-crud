@@ -2,8 +2,6 @@
 require_once "header.php";
 require_once "database/connect.php";
 require_once "database/table-users.php";
-
-
 ?>
 
     <div style="border-radius:0 20px" class="card">

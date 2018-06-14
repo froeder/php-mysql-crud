@@ -21,7 +21,7 @@
                         <span style="color:black"><i class="material-icons">arrow_back</i> Back</span>
                     </button>
                 </a>
-                <a href="list_users.php">
+                <a href="list_items.php">
                     <button class="btn waves-effect waves-light red">
                         <span style="color:black"><i class="material-icons">arrow_back</i>Back to List</span>
                     </button>
