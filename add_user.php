@@ -11,31 +11,31 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">account_circle</i>
-                            <input class="form-control" type="text" id="icon_prefix" name="name">
-                            <label for="icon_prefix">Name</label>
+                            <input class="form-control" type="text" id="name" name="name">
+                            <label for="name">Name</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">email</i>
                             <input class="form-control" type="email" id="email" name="email">
-                            <label for="icon_telephone">E-mail</label>
+                            <label for="email">E-mail</label>
                         </div>
                     </div>
                     <div class="row">
                     <div class="input-field col s6">
                             <i class="material-icons prefix">business</i>
                             <input class="datepicker form-control" type="text" id="company" name="company">
-                            <label for="icon_telephone">Company Name</label>
+                            <label for="company">Company Name</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">date_range</i>
                             <input class="datepicker form-control" type="date" id="born" name="born">
-                            <label for="icon_telephone">Born Date</label>
+                            <label for="born">Born Date</label>
                         </div>
                     </div>
                     <div class="input-field col s6">
                         <i class="material-icons prefix">lock</i>
                         <input class="datepicker form-control" type="password" id="password" name="password">
-                        <label for="icon_telephone">Password</label>
+                        <label for="password">Password</label>
                     </div>
             </div>
         </div>

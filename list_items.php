@@ -41,6 +41,11 @@
             ?>
         </table>
     </div>
+    <div style="border-radius:0 0 20px 20px " class="card-action grey">
+        <a href="add_item.php">
+            <button class="waves-effect waves-light btn"><i class="material-icons">add</i> Add Item</button>
+        </a>
+    </div>
 </div>
 
 
